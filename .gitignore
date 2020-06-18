@@ -1,5 +1,5 @@
-sleuth-server-webmvc.iml
 .idea
 /.idea/
 target
 /target/
+/sleuth-server-http.iml
