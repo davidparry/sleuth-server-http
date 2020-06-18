@@ -5,7 +5,6 @@ import com.davidparry.service.LocalWorkService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.sleuth.annotation.NewSpan;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -44,7 +43,6 @@ public class Backend {
         return resp;
     }
 
-    @NewSpan("backendWorkServiceDavid")
     public void backendWorkService(long time) {
         logger.info("Backend doing work for {}", time);
         try {
